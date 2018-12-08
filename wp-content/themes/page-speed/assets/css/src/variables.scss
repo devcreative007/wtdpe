@@ -1,0 +1,39 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Layout
+$site_width: 1360px;
+$main_width: 56;
+$left_sidebar_width: 18.75;
+$padding: 40px;
+$container_type: 'regular';
+$sb_widget_cards: 0; //Not default !!
+$vr: 26px; //vertical rhythm
+$footer-columns: 4;
+
+$is_sleek_header: 0;
+$header_height: 48px;
+
+// Typography
+$body-font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$base-font-size: 17px;
+$base-line-height: 1.6em;
+$headings-font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-stack: 'Open Sans', sans-serif;
+$headings-font-weight: bold;
+
+$vr: $base-font-size*($base-line-height/1em);
+
+
+// For css optimization
+$layout: 'centered';
+$logo-position: 'left';
+// Don't remove the below line.
+// It's used for overriding the variables.
+///** Moment of truth **/
+
+/**variables**/

@@ -1,0 +1,31 @@
+#footer-links{
+  text-align: center;
+  margin: 0;
+}
+#footer-links li{
+  display: inline-block;
+list-style: none;
+}
+
+#footer-links li a{
+  padding: 5px 6px;
+}
+
+#copyright-container {
+  background: darken($footer-bg,.025);
+  font-family: $headings-font-stack;
+  font-size: .8em;
+  font-weight: 300;
+  color: $light-3;
+  a {
+    color: $light-1;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $primary;
+  }
+  .inner {
+    padding: .5*$padding $padding;
+    text-align: center
+  }
+}

@@ -1,0 +1,14 @@
+.searchbox input[type="submit"] {
+    background: url(../images/search-icon-ie8.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 50%;
+	height: 26px;
+}
+
+.submit-search-ico:after {
+	content: none;	
+}
+
+.searchbox form {
+	width: 180px;
+}

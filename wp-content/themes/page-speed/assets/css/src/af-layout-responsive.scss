@@ -1,0 +1,54 @@
+//* Smaller desktops */
+@media only screen and (max-width: 1200px) {
+  #wrapper,
+  #ns1,
+  #ns2 {
+    width: 100%
+  }
+}
+
+//Tablets
+@media only screen and (max-width: 800px) {
+  .hybrid{width:100%}
+
+  .site-title {
+    font-size: 8vw;
+    line-height: 1.2em;
+  }
+
+  #wrapper {
+    #sb1,
+    #sb2,
+    #left,
+    #main,
+    .hybrid,
+    #site-footer-container .fc{
+      width: 100%;
+      box-sizing: border-box;
+      float: none;
+    }
+    #sb1 {
+      background: $light-2
+    }
+    #sb2 {
+      background: $light-3
+    }
+    .widget {
+      //width: 300px;
+      margin: auto
+    }
+
+    #site-header{float: none}
+  }
+
+  #copyright-container{
+    .hybrid{
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  //Hide menus
+  #primary-nav-container,#secondary-nav-container,#header-nav-container{display: none}
+}
+

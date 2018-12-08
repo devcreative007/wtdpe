@@ -1,0 +1,285 @@
+/*
+Theme Name: Leslie
+Description: Used to style the TinyMCE editor.
+*/
+/* =General
+-------------------------------------------------------------- */
+html .mceContentBody {
+width: 90%;
+margin: 0 auto;
+	}
+
+body {
+color: #333;
+text-shadow: 1px 1px 0 #fff;
+font-family: Arial, sans-serif;
+letter-spacing: 0.05em;
+padding: 10px;
+font-size: 100%;
+line-height: 1.6875;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	}
+
+	a {
+		border-bottom: 1px dotted;
+		text-decoration: none;
+		}
+
+	a:hover {
+		color: #000;
+		}
+
+ul ul,
+ol ol {
+	margin: 0;
+	}
+
+pre {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	color: #666;
+	font-size: 90%;
+	}
+
+table {
+	width: 100%;
+	}
+
+	tr:nth-of-type(odd) {
+		background: #eee;
+	}
+
+	td, th {
+		background: #fff;
+		padding: 6px;
+		border: 1px solid #ccc;
+		text-align: left;
+		}
+
+	th {
+		background: #eee;
+		font-weight: bold;
+		}
+
+cite {
+	text-align: right;
+	font-style: normal;
+	display: block;
+	margin-bottom: 10px;
+	border: none;
+	}
+
+	cite:before {
+		content: '\2013 \00A0';
+		}
+
+.mceContentBody blockquote {
+	font-weight: normal;
+	margin: 5px 0 1em 0;
+	border-color: #ccc;
+	color: #888;
+	border-left: 10px solid #ccc;
+	padding-left: 12px;
+	}
+
+.mceContentBody blockquote em,
+.mceContentBody blockquote i,
+.mceContentBody blockquote cite {
+	font-style: normal;
+	}
+
+/* =Inputs
+-------------------------------------------------------------- */
+input,
+textarea {
+	padding: 8px;
+	border: 1px solid #CCC;
+	outline: none;
+	font-weight: normal;
+	}
+
+	input:focus,
+	textarea:focus {
+		border-color: #AAA;
+		-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+		box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+		}
+
+input[type="submit"] {
+	margin: 10px 0;
+	}
+
+/* =Aside
+-------------------------------------------------------------- */
+.format-aside p {
+	margin-top: 0;
+	}
+
+/* =Quote
+-------------------------------------------------------------- */
+.format-quote {
+	font-size: 18px;
+	line-height: 27px;
+	padding-left: 50px;
+	font-style: italic;
+	}
+
+	.format-quote p,
+	.format-quote blockquote {
+		margin: 0;
+		}
+
+	.format-quote p:before {
+		font-family: Georgia, serif;
+		color: #ccc;
+		display: block;
+		font-size: 100px;
+		width: 50px;
+		content: '\201C';
+		height: 0;
+		top: -40px;
+		left: -50px;
+		position: relative;
+		}
+
+	.format-quote blockquote {
+		border: 0;
+		padding: 0;
+		font-size: 18px;
+		color: #555;
+		}
+
+/* =Status
+-------------------------------------------------------------- */
+.format-status {
+	padding-left: 77px;
+	clear: none;
+	display: inherit;
+	margin-bottom: 1em;
+	}
+
+	.format-status p {
+		line-height: 1.6875;
+		margin-top: 0;
+		}
+
+	.format-status p:before {
+		background-color: #eee;
+		border: 1px solid #ddd;
+		display: block;
+		width: 60px;
+		height: 60px;
+		content: '';
+		top: 15px;
+		left: 15px;
+		position: absolute;
+		}
+
+/* =Link
+-------------------------------------------------------------- */
+.format-link p {
+	margin: 0;
+	}
+
+	.format-link cite a {
+		font-size: 140%;
+		line-height: 22px;
+		border: 0;
+		}
+
+.format-link cite {
+	text-align: left;
+	margin-bottom: 0;
+	}
+
+	.format-link cite:before {
+		content: '';
+		}
+
+/* =Alignments
+-------------------------------------------------------------- */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+	}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+	}
+
+.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+img {
+padding: 10px;
+background: #fff;
+border: 1px solid #ddd;
+height: auto;
+max-width: 97.5%;
+	}
+
+	img.size-full {
+		width: auto; /* Prevent stretching of full-size images in IE8 */
+		}
+
+/* =Image captions
+-------------------------------------------------------------- */
+.wp-caption {
+    background: #fff;
+    border: 1px solid #ddd;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 10px 10px 5px;
+    text-align: center;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+}
+
+.wp-caption-dd {
+padding: 5px 0 0;
+}
+
+.wp-caption a {
+display: block;
+border: 0;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    margin:0;
+    padding: 0;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 80%;
+    margin:0;
+    padding:0 4px 5px;
+}

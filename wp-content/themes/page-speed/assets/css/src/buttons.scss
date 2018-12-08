@@ -1,0 +1,215 @@
+.he-btn, .button, .btn, a.btn {
+  padding: 6px 8px;
+  color: rgba($button-color, 1) !important;
+  background: $button-bg;
+  @include gradient(lighten($button-bg, .1), darken($button-bg, .1), linear);
+  @include border-radius(.3em);
+  text-decoration: none !important;
+  //margin-left: 10px;
+  //margin-right: 10px;
+  display: inline-block;
+  border-width: 0;
+}
+
+.he-btn:hover, .button:hover, .btn:hover, a.btn:hover {
+  @include sharp-shadow();
+  @include gradient(lighten($primary, .1), darken($primary, .2), linear);
+
+}
+
+/* Sizes */
+.he-btn.xs,
+.he-btn.x-small,
+.he-btn.extra-small {
+  padding: 1px 4px;
+  font-size: .8em;
+  line-height: 1.3em;
+}
+
+.he-btn.small {
+  padding: 2px 6px;
+  font-size: .9em;
+  line-height: 1.4em;
+}
+
+.he-btn.lg,
+.he-btn.large {
+  padding: 8px 12px;
+  font-size: 1.25em;
+}
+
+.he-btn.xl,
+.he-btn.xlg,
+.he-btn.x-large,
+.he-btn.extra-large {
+  padding: 16px 20px;
+  font-size: 2em;
+}
+
+/* Sizes */
+
+.he-btn.outline {
+  background: none !important;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px 6px;
+}
+
+.he-btn.outline.xs,
+.he-btn.outline.x-small,
+.he-btn.outline.extra-small {
+  padding: 0 3px;
+  border-width: 1px;
+}
+
+.he-btn.outline.small {
+  padding: 0 4px;
+  border-width: 2px;
+}
+
+.he-btn.outline.lg,
+.he-btn.outline.large {
+  padding: 5px 9px;
+  border-width: 3px;
+}
+
+.he-btn.outline.xl,
+.he-btn.outline.xlg,
+.he-btn.outline.x-large,
+.he-btn.outline.extra-large {
+  padding: 11px 15px;
+  border-width: 5px;
+}
+
+.he-btn.sharp {
+  @include border-radius(0);
+}
+
+.he-btn.round {
+  @include border-radius(.25em);
+}
+
+.he-btn.very-round {
+  @include border-radius(.5em);
+}
+
+.he-btn.fully-round {
+  @include border-radius(1em);
+}
+
+.he-btn.outline {
+  background: none;
+}
+
+/* Colors */
+.he-btn.red {
+  @include gradient(#ff5e3a, #ff2a68, linear)
+}
+
+.he-btn.orange {
+  @include gradient(#ff9500, #ff5e3a, linear)
+}
+
+.he-btn.yellow {
+  @include gradient(#ffdb4c, #ffcd02, linear)
+}
+
+.he-btn.green {
+  @include gradient(#87fc70, #0bd318, linear)
+}
+
+.he-btn.teal {
+  @include gradient(#52edc7, #5ac8fb, linear)
+}
+
+.he-btn.blue {
+  @include gradient(#0e74ff, #1d62f0, linear)
+}
+
+.he-btn.black {
+  @include gradient(#4a4a4a, #2b2b2b, linear)
+}
+
+.he-btn.grey,
+.he-btn.gray,
+.he-btn.silver {
+  @include gradient(#dbddde, #898c90, linear)
+}
+
+.he-btn.purple {
+  @include gradient(#d56efd, #842abf, linear)
+}
+
+.he-btn.pink {
+  @include gradient(#fc5fa6, #fc2a19, linear)
+}
+
+/* Outline buttons */
+.he-btn.red.outline {
+  color: #ff5e3a!important;
+}
+
+.he-btn.orange.outline {
+  color: #ff9500!important;
+}
+
+.he-btn.yellow.outline {
+  color: #ffdb4c!important;
+}
+
+.he-btn.green.outline {
+  color: #87fc70!important;
+}
+
+.he-btn.teal.outline {
+  color: #52edc7!important;
+}
+
+.he-btn.blue.outline {
+  color: #0e74ff!important;
+}
+
+.he-btn.black.outline {
+  color: #4a4a4a!important;
+}
+
+.he-btn.grey.outline,
+.he-btn.gray.outline,
+.he-btn.silver.outline {
+  color: #dbddde!important;
+}
+
+.he-btn.purple.outline {
+  color: #d56efd!important;
+}
+
+.he-btn.pink.outline {
+  color: #fc5fa6!important;
+}
+
+.more-link {
+  margin-top: -($vr/2);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  font-size: .9em;
+}
+
+.more-link .he-btn {
+  padding: 0 8px;
+}
+
+.more-link .icon {
+  background: rgba(0, 0, 0, .1);
+
+  text-align: center;
+  margin: auto -8px 0 6px;
+  padding: 0 6px;
+  float: right;
+  -webkit-border-top-right-radius: .3em;
+  -webkit-border-bottom-right-radius: .3em;
+  -moz-border-radius-topright: .3em;
+  -moz-border-radius-bottomright: .3em;
+  border-top-right-radius: .3em;
+  border-bottom-right-radius: .3em;
+}

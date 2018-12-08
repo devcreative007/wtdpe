@@ -1,0 +1,482 @@
+/*
+Theme Name: Override
+Description: Used to style the TinyMCE editor.
+@credit: Twenty Eleven
+*/
+
+html .mceContentBody {
+    max-width: 625px;
+}
+
+body {
+	color: #727272;
+	font-family: Arial, Helvetica, Georgia, sans-serif;
+	font-size: 16px; 
+	font-weight: 400;
+	line-height: 1;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+
+}
+
+/* =Headings
+-------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	margin-top: 0;
+	clear: both;
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1.1428;
+	margin-bottom: .179em;
+	padding: 0 0 0 .018em;
+}
+
+h2 {
+	line-height: .9999;
+	margin-bottom: .2083em;
+	padding: 0 0 0 .042em;
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2.125em;
+	line-height: 1.4117;
+	margin-bottom: .294em;
+	padding: 0 0 0 .088em;
+}
+
+h4 {
+	line-height: 1.1428;
+	margin-bottom: .357em;
+	padding: 0 0 0 .107em;
+	font-size: 1.750em;
+}
+
+h5 {
+	line-height: 1.6;
+	margin-bottom: .500em;
+	padding: 0 0 0 .200em;
+	font-size: 1.250em;
+}
+
+h6 {
+	line-height: 1;
+	margin-bottom: .625em;
+	padding: 0 0 0 .250em;
+	font-size: 1em;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: .063em;
+	margin: 1.5em 0 1.5em 0;
+}
+
+/* =Text elements
+-------------------------------------------------------------- */
+
+.mce-content-body p {
+	margin-bottom: 1.250em;
+	margin-top: 0;
+	padding: .250em .250em 0;
+	line-height: 1.4;
+}
+
+ul {
+	line-height: 1.5;
+	list-style-type: square;
+}
+
+
+ul,
+ol {
+	line-height: 1.5;
+	list-style-type: square;
+	padding: 0;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+li {
+	margin: 0 0 0 1.500em;
+}
+
+dl {
+	margin: 0 .42em;
+}
+
+dt {
+	font-weight: bold;
+	margin: 0;
+}
+
+dd {
+	line-height: 1.714285714;
+	margin: 0 0 .5em 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+cite {
+	border: none;
+}
+
+big {
+	font-size: 128.571429%;
+}
+
+.mceContentBody blockquote {
+	font-family: georgia, "bitstream charter", serif;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0;
+}
+
+pre {
+	background: #f4f4f4;
+	font: 1em "courier 10 pitch", courier, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: .75em 1.625em;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+code,
+kbd,
+samp,
+var {
+	font-family: monaco, consolas, "andale mono", "dejavu sans mono", monospace;
+	font-size: 1em;
+}
+
+abbr,
+acronym,
+dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+address {
+	display: block;
+	line-height: 1.5;
+	margin: 1em .188em .5em;
+}
+
+del {
+	color: #727272;
+}
+
+ins {
+	background: #fff9c0;
+	border: none;
+	color: #333;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: .6em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.8em;
+}
+
+sub {
+	bottom: -0.4em;
+}
+
+/* =Buttons and inputs
+-------------------------------------------------------------- */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="search"],
+input[type="datetime-local"],
+input[type="tel"],
+input[type="url"],
+input[type="number"] {
+	background: none;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0 0 3px #e7e7e7;
+	color: #6b6b6b;
+	margin: 0;
+	min-height: 1.500em;
+	padding: 0 .188em;
+	width: 60%;
+	font-size: inherit;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+fieldset {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: auto;
+	width: 100%;
+}
+
+textarea {
+	background: none;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0 0 3px #e7e7e7;
+	color: #6b6b6b;
+	display: block;
+	height: 7em;
+	padding: 0 .250em;
+	width: 90%;
+	font-family: inherit;
+}
+
+button:hover
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	font-size:inherit;
+	background-color: #373737;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0 0 3px #e7e7e7;
+	color: #fff;
+	cursor: pointer;
+	height: 2em;
+	transition-duration: .5s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: .5s;
+	-webkit-transition-timing-function: linear, ease-in;
+	-moz-transition-property: background-color;
+	-moz-transition-duration: .5s;
+	-moz-transition-timing-function: linear, ease-in;
+	-o-transition-property: background-color;
+	-o-transition-duration: .5s;
+	-o-transition-timing-function: linear, ease-in;
+	transition-property: background-color;
+	transition-timing-function: linear, ease-in;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover{
+	background-color: #30e3ff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="search"]:focus,
+input[type="datetime-local"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	border-color: #9ecaed;
+	box-shadow:0 0 3px #9ecaed;
+	outline: none;
+	-webkit-transition: box-shadow linear 1s, border 1ms ease-out;
+	-moz-transition: box-shadow linear 1s, border 1s ease-out;
+	-o-transition: box-shadow linear 1s, border 1s ease-out;
+	transition: box-shadow linear 1s, border 1s ease-out;
+}
+
+/* =Links
+-------------------------------------------------------------- */
+
+a {
+	color: #283972;
+	outline: none;
+	transition-duration: .5s;
+	transition-property: color;
+	transition-timing-function: linear;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .5s;
+	-webkit-transition-timing-function: linear, ease-in;
+	-moz-transition-property: color;
+	-moz-transition-duration: .5s;
+	-moz-transition-timing-function: linear, ease-in;
+	-o-transition-property: color;
+	-o-transition-duration: .5s;
+	-o-transition-timing-function: linear, ease-in;
+	transition-property: color;
+	transition-timing-function: linear;
+}
+
+a,
+a em,
+a strong {
+	outline: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+	color: #30e3ff;
+}
+
+/* =Alignment
+-------------------------------------------------------------- */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: .5em .5em 0 0;
+	position: relative;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: .5em 0 0 .5em;
+	position: relative;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto !important;
+	position: relative;
+}
+
+/* =Tables
+-------------------------------------------------------------- */
+
+table {
+	border-bottom: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: #757575;
+	font-size: 1em;
+	line-height: 2;
+	margin: 0 0 1.500em;
+	width: 100%;
+}
+
+
+tr th {
+	color: #636363;
+	font-size: 1em;
+	text-align: left;
+	font-weight: normal;
+	padding: .5em;
+}
+
+td {
+	border-top: 1px solid #ededed !important;
+	color: #757575;
+	font-weight: normal;
+	padding: .5em;
+	text-align: left;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+img,
+.editor-attachment {
+	border: 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+}
+
+img.size-full {
+	width: auto/9; /* Prevent stretching of full-size images in IE8 */
+}
+
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 100%;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.mce-wp-nextpage {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+img.wp-smiley {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption {
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 0.250em;
+}
+
+.wp-caption-dt {
+	margin: 0;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	font-size: .8em;
+	font-style: italic;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
